@@ -12,13 +12,7 @@ function App() {
             Edit <code>src/App.jsx</code> and save to test <code>HMR</code>
           </p>
         </div>
-        <button
-          type="button"
-          className="counter"
-          onClick={() => setCount((count) => count + 1)}
-        >
-          Number is {count}
-        </button>
+        <MyButton />
       </section>
 
       <div className="ticks"></div>
@@ -27,6 +21,20 @@ function App() {
       <section id="spacer"></section>
     </>
   )
+}
+
+function MyButton() {
+  const [count, setCount] = useState(0);
+
+  function handleClick() {
+    setCount(count + 1);
+  }
+
+  return (
+    <button onClick={handleClick}>
+      Clicked {count} times
+    </button>
+  );
 }
 
 export default App
