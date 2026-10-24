@@ -7,7 +7,7 @@ function App() {
     <>
       <section id="center">
         <div>
-          <h1 className="text-3xl font-bold text-blue-500">Hello</h1>
+          <h1 className="text-3xl font-bold text-blue-500">Doing some tests</h1>
           <p>
             Edit <code>src/App.jsx</code> and save to test <code>HMR</code>
           </p>
